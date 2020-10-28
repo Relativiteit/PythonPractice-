@@ -1,4 +1,3 @@
-Contains
 # Introduction To Python snippit
 This repository contains code I am writing while doing the course introduction to python at the VU Amsterdam
 
