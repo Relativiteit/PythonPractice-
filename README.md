@@ -27,7 +27,7 @@ The directories of the modules also contains small practice code that are not fo
 - `collatz.py` a Python code snippet collatz conjecture.  
 - `second_smallest.py` a Python code snippet using insertion sort algorithm.
 
-## part 3. Module 3 Methods and Functions 
+## Part 3. Module 3 Methods and Functions 
 
 
 
