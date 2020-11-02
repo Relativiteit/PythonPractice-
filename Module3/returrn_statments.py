@@ -7,7 +7,7 @@
 
 #print(round(1.5)+ 5)
 print(round(1.51))"""
-
+# Program returning the number of vowels from user input
 VOWELS = ["A","E", "I", "O", "U", "a", "e", "i", "o", "u"]
 
 def count_vowels(text):

@@ -30,11 +30,11 @@ The directories of the modules also contains small practice code that are not fo
 ## Part 3. Module 3 Methods and Functions 
 
 ###  5. Methods and Functions
-- `factorial_n.py` a Python code snippit 
-- `amicable_numbers.py` a Python code snippit 
-- `defining_functions.py` a Python code snippit 
-- `return_statements.py` a Python code snippit 
-- `perfect_numbers` a Python code snippit 
+- `factorial_n.py` a Python code snippit that takes the input n and calculates the factorial number.
+- `amicable_numbers.py` a Python code snippit to check if two numbers are amicable.
+- `defining_functions.py` a Python code snippit from the course video explaining defining funcitons.
+- `return_statements.py` a Python code snippit returning the number of vowels from user input 
+- `perfect_numbers` a Python code snippit to check that the input a positive integer is equal to the sum of its proper divisors.
 
 
 
