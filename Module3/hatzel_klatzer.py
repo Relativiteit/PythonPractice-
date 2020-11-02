@@ -3,6 +3,8 @@ import sys
 """ Assignment hatzel_klatzer
     Created on 02-11-2020, 09:12
     @author: Alejo Cain """
+# Program to check how many seizures are reported with specific dates,
+# and parsing for odd and even months.
 
 STARTING_YEAR = 1950
 FINAL_YEAR = 2050

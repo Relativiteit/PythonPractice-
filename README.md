@@ -35,6 +35,7 @@ The directories of the modules also contains small practice code that are not fo
 - `defining_functions.py` a Python code snippit from the course video explaining defining functions.
 - `return_statements.py` a Python code snippit returning the number of vowels from user input.
 - `perfect_numbers` a Python code snippit to check that the input a positive integer is equal to the sum of its proper divisors.
+- 'hatzel_klatzer' a Python code snippet reading a input.txt file for dates of seizures and parsing for odd and even months. 
 
 
 
