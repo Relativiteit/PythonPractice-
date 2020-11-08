@@ -26,7 +26,7 @@ def read_in_range(input_string, start, end):
 def odd_month(input_string):
     date = input_string.split()
 
-    # The day is read, but not seaved
+    # The day is read, but not saved
     read_in_range(date[0], 1, 31)
 
     # The month is read and saved in the variable "month"
