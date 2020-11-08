@@ -1,7 +1,8 @@
 """ Assingment palidrome_1.5
     Created on 08-11-2020, 14:23
     @author Alejo Cain """
-# write a program that will print the alphabet and reversed in 1 string with user input the middle
+# write a program that will print the alphabet and reversed in 1 string
+# with user input the middle of the sentence
 
 def front_aplhabet():
     alphabet = ''
