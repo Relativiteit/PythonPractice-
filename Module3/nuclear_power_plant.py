@@ -1,7 +1,7 @@
 """Assignment nuclear_power_plant
-    Created on 08-11-2020, 10:15
+    Created on 08-11-2020, 08:10
     @author Alejo Cain """
-
+# function to print a string multiple times
 def warning_message(message, number_of_times):
     for i in range(number_of_times):
         print(message)
