@@ -4,7 +4,7 @@
 
 #insertion sort from introduction to algorithms third edition
 #i want to know the "normal way" to solve this problem with only using logic with while and for loops and not this given algorithmn
-def insertionSort(number):
+"""def insertionSort(number):
 
     for i in range(1, len(number)):
 
@@ -23,3 +23,19 @@ for i in range(len(number)):
     print(number[i])
 print(number[1])
 #need help SOS hahaha
+"""
+a = [1 , 3, 12, 15, -1, 5, 0]
+
+smallest = a[0]
+second_smallest = a[1] #given a[1] is bigger then a[0]
+
+for num in a:
+    if num < smallest:
+        second_smallest = smallest
+        smallest = num
+    elif num < second_smallest: #this should only happen if the first if statement is not true
+        second_smallest = num
+print(smallest, second_smallest)
+
+
+

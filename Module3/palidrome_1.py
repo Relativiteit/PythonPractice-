@@ -5,11 +5,20 @@
 
 def front_aplhabet():
     alphabet = ''
-    for letter in range(0, 25):
-        alphabet += chr(ord("a") + letter)
+    for letter in range(ord("a"), ord("z")): # bad practice
+        alphabet += chr(letter)
+    for letter in range(ord("z"), ord("a")-1,-1):
+        alphabet += chr(letter)
+
     return alphabet
 
-# function to mirror front_aplhabet output
+
+palidrome = front_aplhabet()
+print(palidrome)
+
+
+
+"""# function to mirror front_aplhabet output
 def back_alphabet(input):
     return input[::-1]
 
@@ -18,10 +27,7 @@ def end_aplhabet():
     for letter in range(25,26):
         alphabet += chr(ord("a")+ letter)
     return alphabet
-
-palidrome = front_aplhabet() + end_aplhabet() + back_alphabet(front_aplhabet())
-print(palidrome)
-
+    """""
 
 
 
