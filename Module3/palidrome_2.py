@@ -1,26 +1,24 @@
 """ Assingment palidrome_2
-    Created on 08-11-2020, 21:04
+    Created on 14-11-2020, 06:52
     @author Alejo Cain """
 # write a program that will print the alphabet and reversed in 1 string
 # with user input the middle of the sentence
 
-def front_alphabet(human):
+
+def front_aplhabet():
     alphabet = ''
-    for letter in range(0,  human):
-        alphabet += chr(ord("a") + letter)
+    human = ord(input("Enter 1 letter: "))
+    for letter in range(ord("a"), human):
+        alphabet += chr(letter) # range(122, 97 -1 , -1 )
+    for letter in range(human, ord("a")-1,-1): # the -1 after "a" makes it 96
+        alphabet += chr(letter)
+
+
     return alphabet
 
-# function to mirror front_aplhabet output
-def back_alphabet(input):
-    return input[::-1]
 
-# take user input of str into ord
-human = ord(input("Please enter a letter: ")) - 97
-
-
-palidrome_2 = front_alphabet(human) + chr(human+97) + back_alphabet(front_alphabet(human))
-
-print(palidrome_2)
+palidrome = front_aplhabet()
+print(palidrome)
 
 
 
