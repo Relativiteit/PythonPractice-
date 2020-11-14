@@ -17,3 +17,4 @@ lines = file.splitlines()
 
 for line in lines:
     print(sum_numbers(line))
+# .strip() function removes trailing or leading spaces in a string
