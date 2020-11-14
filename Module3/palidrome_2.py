@@ -13,7 +13,6 @@ def front_aplhabet():
     for letter in range(human, ord("a")-1,-1): # the -1 after "a" makes it 96
         alphabet += chr(letter)
 
-
     return alphabet
 
 
