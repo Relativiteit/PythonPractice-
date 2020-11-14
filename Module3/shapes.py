@@ -4,7 +4,7 @@
 
 # practice shapes
 import sys
-sys.setrecursionlimit(2000)
+sys.setrecursionlimit(50)
 print(sys.getrecursionlimit())
 
 i = 0
@@ -15,5 +15,3 @@ def greet():
     greet()
 
 greet()
-
-def fact(n):
