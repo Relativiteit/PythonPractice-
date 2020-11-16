@@ -26,8 +26,6 @@ print(average_grade())
 
 
 
-# = [float(n) for n in file[-1].split(" ")]
-
 """
 print(file[0])
 print(file[1])
