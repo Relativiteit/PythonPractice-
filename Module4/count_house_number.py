@@ -26,6 +26,6 @@ def count_house_number(school, house_number):
 schools = open("C:/Users/PourChevre/PycharmProjects/VUPythonProject/Module4/input")
 result = 0 # global variable
 for school in schools:
-    result += count_house_number(school, 3 )
+    result += count_house_number(school, 2 )
 print(result)
 
