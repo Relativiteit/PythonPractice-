@@ -15,16 +15,17 @@ def has_house_number(student, house_number):
 
 
 def count_house_number(school, house_number):
-    students = school.splitlines
+    students = school.splitlines()
     result = 0
 
     for student in students:
-        if has_house_numers(student, house_number):
+        if has_house_number(student, house_number):
             result += 1 # local variable
     return result
 
-school = open("input.txt").read().split("=")
+schools = open("C:/Users/PourChevre/PycharmProjects/VUPythonProject/Module4/input")
 result = 0 # global variable
 for school in schools:
-    result += count_house_numer(school, 3 )
+    result += count_house_number(school, 3 )
+print(result)
 
