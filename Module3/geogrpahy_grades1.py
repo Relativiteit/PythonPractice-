@@ -1,5 +1,5 @@
-""" Assignment geography_grades_1
-    Created on 14-11-2020, 20:12
+""" Assignment geography_grades1
+    Created on 12-11-2020
     @author Alejo Cain """
 
 def convert_line_to_grades(line):
@@ -37,7 +37,7 @@ for line in text:
     if(len(score_value) == 0):
         continue
     average = average_grade(score_value)
-    print(str(name) + " %.2f" % average)
+    print(str(name) + " %.1f" % average)
 
 
 
