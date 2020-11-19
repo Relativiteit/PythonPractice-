@@ -1,36 +1,48 @@
 """ Assignment geography_grades_1
     Created on 14-11-2020, 20:12
     @author Alejo Cain """
-# constant value
-RECIEVED_GRADES = 3
-# reading file from hard drive
-file = open("C:\\Users\\PourChevre\\PycharmProjects\\VUPythonProject\\Module3\\grades.txt")
-def average_grade():
-    for grade in file:
-        # skipping underscores
-        grade = grade.replace("_", " ").split()
 
-        students, exam_results = grade[:-RECIEVED_GRADES], grade[-RECIEVED_GRADES:]
-        # appending names
-        student = " ".join(students)
-        #
-        exam_results = [float(score) for score in exam_results]
-        #calculating average
-        average_score = sum(exam_results) / len(exam_results)
-        # trying to use f strings instead of %.2f .... % student, method
-        print(f"{student} has a average exam result of {average_score:.1f}")
+def convert_text_to_grades(text):
+    names = []
+    scores = []
+    for line in text:
+        name = ""
+        checking_name = True
+        score_text = ""
+        for letter in line:
+            if letter != "_" and checking_name:
+                name += letter
+            if letter == "_" and checking_name:
+                checking_name = False
+            if letter != "_" and not checking_name:
+                score_text += letter
 
-    return
+        score_text = score_text.split(" ")
+        score_value = []
+        for score in score_text:
+            if(score == ''):
+                continue
+            score_value.append(float(score))
 
-print(average_grade())
+        scores.append(score_value) # list(scores) with lists of grades(score_value)
+        names.append(name)
+    return (scores, names)
 
+def average_grade(grades):
+    average = 0
+    for grade in grades:
+        average += grade
+    average /= len(grades)
+    return average
 
+# main
+text = open("grades.txt").read().split("\n")
+scores, names = convert_text_to_grades(text)
 
-"""
-print(file[0])
-print(file[1])
-print(file[2])
-print(file[3]) """
+# print
+for i, score in enumerate(scores):
+    if(len(score) == 0):
+        continue
 
-
-#print(file)
+    average = average_grade(score)
+    print(str(names[i]) + " %.2f" % average)
