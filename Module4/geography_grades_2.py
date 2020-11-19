@@ -1,31 +1,41 @@
 """ Assignment geography_grades_2
-    Created on 18-11-2020, 10:23
+    Created on 19-2020, 10:23
     @author Alejo Cain """
 
+def convert_line_to_grades(line):
+    name = ""
+    checking_name = True
+    score_text = ""
+    for letter in line:
+        if letter != "_" and checking_name:
+            name += letter
+        if letter == "_" and checking_name:
+            checking_name = False
+        if letter != "_" and not checking_name:
+            score_text += letter
 
-def has_test_score(student, test_score):
-    student = grades.split("_")
-    name = student[0]
-    grade1 = student[1]
-    grade2 = student[2]
-    grade3 = student[3]
-    return read_test_score(name, grade1, grade2, grade3,) == total_test_score
+    score_text = score_text.split(" ")
+    score_value = []
+    for score in score_text:
+        if(score == ''):
+            continue
+        score_value.append(float(score))
 
+    return (name, score_value)
 
+def average_grade(grades):
+    average = 0
+    for grade in grades:
+        average += grade
+    average /= len(grades)
+    return average
 
-def count_test_score(grades, test_score):
-    students = grades.splitlines()
-    result = 0
+# main
+text = open("grades.txt").read().split("\n")
 
-    for student in students:
-        if has_test_score(student, test_score):
-            result += 1
-    return result
-
-
-
-grades = open("C:/Users/a.cain/PycharmProjects/VUPythonProject/Module4/input")
-result = grades.read()
-for grade in grades:
-    result += count_test_score(grade, 3)
-print(has_test_score(student, 7))
+for line in text:
+    name, score_value = convert_line_to_grades(line)
+    if(len(score_value) == 0):
+        continue
+    average = average_grade(score_value)
+    print(str(name) + " %.1f" % average)
