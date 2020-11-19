@@ -4,13 +4,13 @@
 
 
 def has_test_score(student, test_score):
-    student = students.split("_")
+    student = grades.split("_")
     name = student[0]
     grade1 = student[1]
     grade2 = student[2]
     grade3 = student[3]
-    return read_test_score(grade1, grade2, grade3,) == total_test_score
-    return read_test_score(name)
+    return read_test_score(name, grade1, grade2, grade3,) == total_test_score
+
 
 
 def count_test_score(grades, test_score):
@@ -18,13 +18,14 @@ def count_test_score(grades, test_score):
     result = 0
 
     for student in students:
-        if has_test_score(student, test_score)
+        if has_test_score(student, test_score):
             result += 1
     return result
 
 
 
-grades = open("C:/Users/PourChevre/PycharmProjects/VUPythonProject/Module4/input")
-result = 0
+grades = open("C:/Users/a.cain/PycharmProjects/VUPythonProject/Module4/input")
+result = grades.read()
 for grade in grades:
     result += count_test_score(grade, 3)
+print(has_test_score(student, 7))
