@@ -1,8 +1,8 @@
 import turtle
 wn = turtle.Screen()
 color_user = input("Enter a color: ")
-tess_user = input("Enter a desired color for the tess: ")
-tess_pen = int(input("Enter a desired t h i c c ness for the penn: "))
+tess_user = input("Enter a desired color for Tess: ")
+tess_pen = int(input("Enter a desired t h i c c ness for the pen: "))
 wn.bgcolor(color_user)
 wn.title("Hello, Tess!")
 
