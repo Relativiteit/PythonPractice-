@@ -16,4 +16,4 @@ print(x)
 
 
 #Good functions are reusable
-#In general, functions hsould only be dependandt on their paraemters, and constants so local variables and such 
+#In general, functions should only be dependant on their parameters, and local variables.
